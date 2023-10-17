@@ -78,6 +78,8 @@ section{
     padding: 5% 0;
     text-align: center;
     background-color: rgb(227, 238, 240);
+    position: relative;
+    align-content: space-between;
    
     
     
@@ -105,4 +107,38 @@ section{
     border-radius: 2em;
     scroll-snap-type: start;
     height: 15em;
+    
+  }
+
+  .card :nth-child(1){
+    width:70%;
+    position: absolute;
+    top:5em;
+  }
+
+  .card :nth-child(2){
+    width:70%;
+    position: absolute;
+    top:5em;
+  }
+  .card :nth-child(3){
+    width:80%;
+    position: absolute;
+    top:5em;
+    
+  }
+  .card :nth-child(4){
+    width:70%;
+    position: absolute;
+    top:5em;
+  }
+  .card :nth-child(5){
+    width:70%;
+    position: absolute;
+    top:5em;
+  }
+  .card :nth-child(6){
+    width:70%;
+    position: absolute;
+    top:5em;
   }
