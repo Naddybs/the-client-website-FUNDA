@@ -9,20 +9,48 @@
 <body>
     <header>
         <nav>
-            <img src="../assets/Funda_logo.svg.png" alt="Funda-logo">
+            <img class="img-logo" src="../assets/Funda_logo.svg.png" alt="Funda-logo">
             <ul class="navlist-left">
-                <li><a href="#">Kopen</a></li>
-                <Li><a href="#">Huren</a></Li>
-                <li><a href="#">Verkopen</a></li>
+                <li class="navlist-left-hamburger"
+                onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="27"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
-            <ul class="navlist-right">   
-                <li><a href="#">Bewaarde huizen</a></li>
+
+            <ul class="navlist-right">  
+                <!-- <li><a href="#">Bewaarde huizen</a></li> -->
                 <Li><a href="#">Mijn huis</a></Li>
                 <li><a href="#">Profiel</a></li>
             </ul>
+           
+            <ul class="sidebar">
+                <li class="navlist-left-menu"><a href="#"></a></li>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li><a href="#"><b>Kopen</b></a></li>
+                <li><a href="#"><b>Huren</b></a></li>
+                <li><a href="#"><b>Verkopen</b></a></li>    
+            </ul>
+            
         </nav>
     </header>
     
+
+   
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script> 
+
+
+
+
+
+
+
     <main>
 
         <section>
@@ -37,33 +65,23 @@
                 <li class="card"><img src="../assets/huis-6.png" alt="funda-huis-afbeelding"></li>
             </ul>
 
-
-
-         
-            <!-- <ul class="scroll">
-                <li class="card"><img src="../assets/huis-1.png" alt="funda-huis-afbeelding"></li>
-                <li class="card"><img src="../assets/huis-2.png" alt="funda-huis-afbeelding"></li>
-                <li class="card"><img src="../assets/huis-3.png" alt="funda-huis-afbeelding"></li>
-                <li class="card"><img src="../assets/huis-4.png" alt="funda-huis-afbeelding"></li>
-                <li class="card"><img src="../assets/huis-5.png" alt="funda-huis-afbeelding"></li>
-                <li class="card"><img src="../assets/huis-6.png" alt="funda-huis-afbeelding"></li>
-            </ul>
-         
- -->
-
-
-
-
-
            
-        
-        
-        
-        
-        </section>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <h2>Mijn Lijsten</h2>
+        <div class="list-area">
+            
+            <div class="custom-shape-divider-top-1697660420">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+                </svg>
+            </div>
+            </div>
+
+        </div>
+    </footer>
 
 
 </body>

@@ -63,13 +63,13 @@ section{
 }
 .container-1{
     /* width: 100%;  */
-    padding: 10%;
+    /* padding: 10%; */
     /* background-color: hsl(33, 87%, 57%); */
-    position: relative;
+    /* position: relative;
     top:2em;
     
     
-}   
+}    */
 /*  
 .card {
     display: flex;
@@ -159,12 +159,20 @@ section{
         /* position: relative;
         left:10%; */
     }
-    img{
-        width: 10%;
+
+    /* navbar hamburger */
+    .img-logo{
+        width: 35%;
         position: relative;
-        left:5%;
-        top:1.5em;
+        top:  2em;
+        left: 4em;
     }
+    img{
+      width: 25%;
+      position: relative;
+      left:5%;
+      top:1.5em;
+  }
     nav{
         background-color: orange;
         width: 100%;
@@ -178,7 +186,9 @@ section{
     }
     li a{
         text-decoration: none;
-        color: white
+        color: white;
+        font-size:.85em;
+        
     }
     li{
         padding: 0.5em;
@@ -187,28 +197,76 @@ section{
     li a:hover{
         background: linear-gradient(to right, #a974408a, hsl(26, 73%, 26%));
         border-radius: 2em;  
+        
     }
     a{
-        padding: .5em;
+        padding: .2em;
     }
     .navlist-right{
         position:absolute;
-        right: 2em;
+        /* right: 2em; */
         bottom:5%;
-    }
-    .navlist-left{
-        /* position: absolute;
-        left: 12em;
-        bottom: 10%; */
+        left:10em;
     }
     
-    main 
-    section{
-        display: grid;
-       
-    }
+    .navlist-left{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        margin-left: 0;
+        position: relative;
+        right: 2em;
+        bottom: 1.5em;
+} 
+
+ 
+.sidebar{
+    display:flex;
+    width: 100vw;
+    background:rgba(247, 161, 0, 255);
+    position: fixed;
+    top: -0.9em;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:hwb(28 13% 63% / 0.669) ;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start ;
+    box-shadow: 10px 0 10px #0101008a;
+    backdrop-filter: blur(10px);
+  }
+  
+  .sidebar li{
+    list-style: none;
+    margin:1em;
+  }
+  .sidebar a{
+    text-decoration: none;
+    color: white;
+  }
+  .sidebar a:hover{
+    background: linear-gradient(to right, #a974408a, #4b2b13);
+    border-radius: 2em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* main  */
+  
     .container-1{
      width: 100%;  
+     box-shadow: 0px 10px 5px 0px grey;
         /* padding: 10%;
         /* background-color: hsl(33, 87%, 57%); */
         /* position: relative;
@@ -221,12 +279,13 @@ section{
         display: flex;
         width: 10%;
         height: 10em;
-        margin: 7px;
-        padding: 5% 0;
+        margin: 2em;
+        padding: 5%;
         text-align: center;
-        background-color: rgb(227, 238, 240);
+        background-color: #ffffff;
         position: relative;
         align-content: space-between;
+        box-shadow: 0px 5px 10px 0px grey inset;
         
         
       }
@@ -288,3 +347,59 @@ section{
         position: absolute;
         top:5em;
       } 
+
+/* list section */
+
+h2{
+  color: orange;
+  font-size: 2em;
+}
+.list-area{
+  background-color: hsl(30, 25%, 97%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%230088b7' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%2300a6d5' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%230088b7' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%2300a6d5' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%232BC4F5' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%234a2400' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23542d00' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%235E360A' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23542d00' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%234a2400' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%235E360A' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%234a2400' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%235E360A' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23542d00' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%235E360A' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+  height: 30em;
+  margin-top: 3em;
+}
+
+
+
+
+      /* footer svg */
+      .list-area
+      .custom-shape-divider-top-1697660420 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-top-1697660420 svg {
+        position: relative;
+        display: block;
+        width: calc(152% + 1.3px);
+        height: 315px;
+    }
+    
+    .custom-shape-divider-top-1697660420 .shape-fill {
+        fill: hwb(34 20% 5%);
+    }
+    
+    /** For tablet devices **/
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .custom-shape-divider-top-1697660420 svg {
+            width: calc(152% + 1.3px);
+            height: 360px;
+        }
+    }
+    
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        .custom-shape-divider-top-1697660420 svg {
+            width: calc(100% + 1.3px);
+            height: 185px;
+        }
+    }
+  
