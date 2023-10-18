@@ -1,4 +1,5 @@
-*
+/* desktop versie */
+/* 
  body{
 background-color: #f8fafb;
     padding: 0;
@@ -55,7 +56,7 @@ a{
     bottom: 10%;
 }
 
-/* main */
+main 
 section{
     display: grid;
    
@@ -69,7 +70,7 @@ section{
     
     
 }   
-
+/*  
 .card {
     display: flex;
     width: 10%;
@@ -80,8 +81,6 @@ section{
     background-color: rgb(227, 238, 240);
     position: relative;
     align-content: space-between;
-   
-    
     
     
   }
@@ -90,8 +89,8 @@ section{
     display: flex;
     align-items: center;
     position: relative;
-    bottom:16em;
-    background: hsl(38, 91%, 52%);
+    /* bottom:16em; */
+    /* background: hsl(38, 91%, 52%);
     background-size: 30%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -102,9 +101,9 @@ section{
   }
 
   .scroll .card{
-    flex: 0 0 50%;
+    flex: 0 0 50%; */
     /* padding: 2em 1em; */
-    border-radius: 2em;
+    /* border-radius: 2em;
     scroll-snap-type: start;
     height: 15em;
     
@@ -141,4 +140,151 @@ section{
     width:70%;
     position: absolute;
     top:5em;
-  }
+  }  */ 
+
+  
+  /* mobile versie */
+
+
+  body{
+    background-color: #f8fafb;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+     }
+    
+    h1{
+        color: orange;
+        font-size: 2em;
+        /* position: relative;
+        left:10%; */
+    }
+    img{
+        width: 10%;
+        position: relative;
+        left:5%;
+        top:1.5em;
+    }
+    nav{
+        background-color: orange;
+        width: 100%;
+        position:relative;
+        height: 6em; 
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li a{
+        text-decoration: none;
+        color: white
+    }
+    li{
+        padding: 0.5em;
+        font-size: 1.2em;
+    }
+    li a:hover{
+        background: linear-gradient(to right, #a974408a, hsl(26, 73%, 26%));
+        border-radius: 2em;  
+    }
+    a{
+        padding: .5em;
+    }
+    .navlist-right{
+        position:absolute;
+        right: 2em;
+        bottom:5%;
+    }
+    .navlist-left{
+        /* position: absolute;
+        left: 12em;
+        bottom: 10%; */
+    }
+    
+    main 
+    section{
+        display: grid;
+       
+    }
+    .container-1{
+     width: 100%;  
+        /* padding: 10%;
+        /* background-color: hsl(33, 87%, 57%); */
+        /* position: relative;
+        top:2em; */ 
+        
+        
+    }   
+    
+    .card {
+        display: flex;
+        width: 10%;
+        height: 10em;
+        margin: 7px;
+        padding: 5% 0;
+        text-align: center;
+        background-color: rgb(227, 238, 240);
+        position: relative;
+        align-content: space-between;
+        
+        
+      }
+      .scroll{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+        /* bottom:16em; */
+        background: hsl(38, 91%, 52%);
+        /* background-size: 30%; */
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        /* scroll-padding: 30px; */
+        /* padding: 3em; */
+        
+        
+      }
+
+    
+      .scroll .card{
+        flex: 0 0 50%;
+        /* padding: 2em 1em; */
+        border-radius: 2em;
+        scroll-snap-type: start;
+        height: 15em;
+        
+      }
+    
+      .card :nth-child(1){
+        width:70%;
+        position: absolute;
+        top:5em;
+      }
+    
+      .card :nth-child(2){
+        width:70%;
+        position: absolute;
+        top:5em;
+      }
+      .card :nth-child(3){
+        width:80%;
+        position: absolute;
+        top:5em;
+        
+      }
+      .card :nth-child(4){
+        width:70%;
+        position: absolute;
+        top:5em;
+      }
+      .card :nth-child(5){
+        width:70%;
+        position: absolute;
+        top:5em;
+      }
+      .card :nth-child(6){
+        width:70%;
+        position: absolute;
+        top:5em;
+      } 
